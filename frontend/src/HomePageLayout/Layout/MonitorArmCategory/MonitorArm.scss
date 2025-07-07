@@ -1,0 +1,232 @@
+@import "../../../css-config/mixins.scss";
+.monitorArmCategory{
+    border: 1px solid rgba(0,0,0,0.12);
+    overflow: hidden;
+    div{
+        h1{
+            padding-top: 10px; 
+            font-size: 16px;
+            position: relative;
+            &::after{
+             content: "";
+             position: absolute;
+             bottom: -3px;
+             left: 5px;
+             width: 46%;
+             height: 3px;
+             background-color: #1ebc75;
+           }
+           @include sm{
+            padding-top: 5px; 
+            font-size: 16px;
+            position: relative;
+            &::after{
+             content: "";
+             position: absolute;
+             bottom: -3px;
+             left: 5px;
+             width: 15%;
+             height: 3px;
+             background-color: #1ebc75;
+           }
+           }
+           @include md{
+            padding: 15px 0 0 15px; 
+            font-size: 16px;
+            margin-bottom: 25px;
+            position: relative;
+            &::after{
+             content: "";
+             position: absolute;
+             bottom: -3px;
+             left: 10px;
+             width: 28%;
+             height: 3px;
+             background-color: #1ebc75;
+           }
+           }
+           @include lg{
+            padding: 15px 0 0 15px; 
+            font-size: 16px;
+            margin-bottom: 25px;
+            position: relative;
+            &::after{
+             content: "";
+             position: absolute;
+             bottom: -3px;
+             left: 15px;
+             width: 20%;
+             height: 3px;
+             background-color: #1ebc75;
+           }
+           }
+           @include xl{
+            width: 25%;
+            padding: 15px 0 0 15px; 
+            font-size: 16px;
+            margin-bottom: 0;
+            position: relative;
+            &::after{
+             content: "";
+             position: absolute;
+             bottom: -3px;
+             left: 15px;
+             width: 28%;
+             height: 3px;
+             background-color: #1ebc75;
+           }
+           }
+           @include xxl{
+            width: 20%;
+            padding: 15px 0 0 15px; 
+            font-size: 16px;
+            margin-bottom: 0;
+            position: relative;
+            &::after{
+             content: "";
+             position: absolute;
+             bottom: -3px;
+             left: 15px;
+             width: 26%;
+             height: 3px;
+             background-color: #1ebc75;
+           }
+           }
+        }
+        .subCategories{
+            // width: 98%;
+            // height: 100px;
+            display: flex;
+            // flex-wrap: nowrap;
+            align-items: center;
+            gap: 6px;
+            text-transform: capitalize;
+            font-size: 13px;
+            font: 500;
+            margin-left: 10px;
+            margin-bottom: 10px;
+            border-bottom: 3px solid rgba(0,0,0,0.2);
+            // overflow-x: auto;
+    
+            span{
+                cursor: pointer;
+                
+            }
+            @include sm{
+                // width: 98%;
+                // max-width: 200%;
+                // height: 100px;
+                display: flex;
+                // flex-wrap: nowrap;
+                // flex-flow: row;
+                align-items: center;
+                gap: 20px;
+                text-transform: capitalize;
+                font-size: 13px;
+                margin-left: 20px;
+                margin-bottom: 5px;
+                border-bottom: 3px solid rgba(0,0,0,0.2);
+                // overflow-x: auto;
+        
+                span{
+                    padding: 2px 5px;
+                    display: inline-block;
+                    cursor: pointer;
+                    
+                }
+            }
+            @include md{
+                display: flex;
+                align-items: center;
+                gap: 15px;
+                text-transform: capitalize;
+                font-size: 13px;
+                font-weight: 500;
+                padding: 15px 0 0 0;
+                margin-left: 0;
+                margin-bottom: 7px;
+                border-bottom: 0;
+                span{
+                    cursor: pointer;
+                  
+                }
+            }
+            @include lg{
+                display: flex;
+                align-items: start;
+                gap: 20px;
+                text-transform: capitalize;
+                font-size: 13px;
+                font-weight: 500;
+                margin-left: 0;
+                padding: 15px 0 0 0;
+                margin-bottom: 8px;
+                border-bottom: 0;
+                span{
+                    cursor: pointer;
+                    
+                }
+            }
+            @include xl{
+                display: flex;
+                align-items: start;
+                gap: 35px;
+                text-transform: capitalize;
+                font-size: 15px;
+                font-weight: 500;
+                padding: 15px 0 0 0;
+                margin-left: 0;
+                margin-bottom: 15px;
+                border-bottom: 0;
+                span{
+                    cursor: pointer;
+                   
+                }
+            }
+            @include xxl{
+                display: flex;
+                align-items: start;
+                gap: 45px;
+                text-transform: capitalize;
+                font-size: 13px;
+                font-weight: 500;
+                padding: 15px 0 0 0;
+                margin-left: 0;
+                margin-bottom: 15px;
+                border-bottom: 0;
+                span{
+                    cursor: pointer;
+                    &:hover{
+                        color: #1ebc75;
+                    }
+                }
+            }
+            
+        }
+    }
+    .monitorProductCard{
+        margin: 0px 2px;
+       @include md{
+        margin: 0 25px 15px 25px;
+       }
+       @include lg{
+        margin: 0 15px 15px 15px;
+       }
+       @include xl{
+        margin: 0 15px 15px 15px;
+       }
+       @include xxl{
+        margin: 0 15px 15px 15px;
+       }
+        
+    }
+    .monitorProductCardClicked{
+        transform: translateX(100%);
+        animation: productSlide 1s ease-in forwards;
+    }
+
+}
+@keyframes productSlide {
+    0%{transform: translateX(100%);}
+    100%{transform: translateX(0);}
+}

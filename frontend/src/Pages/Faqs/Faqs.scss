@@ -1,0 +1,234 @@
+@import "../../css-config/mixins.scss";
+.faqSection{
+    height: 100%;
+    background-color: #f9f9f9;
+    padding: 10px 0;
+    margin-bottom: 30px;
+    .fullfaq{
+        width: 99%;
+        height: 95%;
+        margin: 0 auto;
+        .headingPart{
+            height: 10%;
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            h4{
+                font-size: 15px;
+                font-weight: 500;
+                color: #077bc4;
+                margin-bottom: 10px;
+            }
+            h1{
+                font-size: 20px;
+                font-weight: 500;
+                color: #242424;
+                margin-bottom: 10px;
+            }
+        }
+        .faqs{
+            max-width: 100%;
+            width: 100%;
+            margin: 10px auto;
+            padding: 0;
+            background-color: white;
+            overflow: hidden;
+            margin-top: 0;
+        }
+    }
+    @include sm{
+        height: auto;
+        background-color: #f9f9f9;
+        padding: 10px 0;
+        margin-bottom: 20px;
+        margin-top: 100px;
+        .fullfaq{
+            width: 99%;
+            height: 95%;
+            margin: 0 auto;
+            .headingPart{
+                height: 10%;
+                text-align: center;
+                margin-top: 10px;
+                margin-bottom: 20px;
+                h4{
+                    font-size: 14px;
+                    font-weight: 500;
+                    color: #077bc4;
+                    margin-bottom: 10px;
+                }
+                h1{
+                    font-size: 20px;
+                    font-weight: 500;
+                    color: #242424;
+                    margin-bottom: 10px;
+                }
+            }
+            .faqs{
+                max-width: 100%;
+                width: 100%;
+                margin: 10px auto;
+                padding: 0;
+                background-color: white;
+                overflow: hidden;
+                margin-top: 0;
+            }
+        }
+    }
+    @include md{
+        height: auto;
+        background-color: #f9f9f9;
+        padding: 20px 0;
+        margin-bottom: 0;
+        margin-top: 100px;
+        .fullfaq{
+            width: 100%;
+            height: 95%;
+            margin: 0 auto;
+            .headingPart{
+                height: 10%;
+                text-align: center;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                h4{
+                    font-size: 14px;
+                    font-weight: 500;
+                    color: #077bc4;
+                    margin-bottom: 10px;
+                }
+                h1{
+                    font-size: 20px;
+                    font-weight: 500;
+                    color: #242424;
+                    margin-bottom: 20px;
+                }
+            }
+            .faqs{
+                max-width: 85%;
+                width: 100%;
+                margin: 10px auto;
+                padding: 15px;
+                background-color: white;
+                overflow: hidden;
+                margin-top: 40px;
+            }
+        }
+    }
+    @include lg{
+        height: auto;
+        background-color: #f9f9f9;
+        padding: 20px 0;
+        margin-bottom: 0;
+        margin-top: 100px;
+        .fullfaq{
+            width: 100%;
+            height: 95%;
+            margin: 0 auto;
+            .headingPart{
+                height: 10%;
+                text-align: center;
+                margin-top: 20px;
+                margin-bottom: 30px;
+                h4{
+                    font-size: 14px;
+                    font-weight: 500;
+                    color: #077bc4;
+                    margin-bottom: 10px;
+                }
+                h1{
+                    font-size: 20px;
+                    font-weight: 500;
+                    color: #242424;
+                    margin-bottom: 20px;
+                }
+            }
+            .faqs{
+                max-width: 60%;
+                width: 100%;
+                margin: 10px auto;
+                padding: 15px;
+                background-color: white;
+                overflow: hidden;
+                margin-top: 40px;
+            }
+        }
+    }
+    @include xl{
+        height: auto;
+        background-color: #f9f9f9;
+        padding: 20px 0;
+        margin-bottom: 0;
+        margin-top: 50px;
+        .fullfaq{
+            width: 90%;
+            height: 95%;
+            margin: 0 auto;
+            .headingPart{
+                height: 10%;
+                text-align: center;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                h4{
+                    font-size: 14px;
+                    font-weight: 500;
+                    color: #077bc4;
+                    margin-bottom: 10px;
+                }
+                h1{
+                    font-size: 20px;
+                    font-weight: 500;
+                    color: #242424;
+                    margin-bottom: 10px;
+                }
+            }
+            .faqs{
+                max-width: 60%;
+                width: 100%;
+                margin: 10px auto;
+                padding: 15px;
+                background-color: white;
+                overflow: hidden;
+                margin-top: 40px;
+            }
+        }
+    }
+    @include xxl{
+        height: auto;
+        background-color: #f9f9f9;
+        padding: 10px 0;
+        margin-bottom: 0;
+        margin-top: 10px;
+        .fullfaq{
+            width: 84%;
+            height: 95%;
+            margin: 0 auto;
+            .headingPart{
+                height: 10%;
+                text-align: center;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                h4{
+                    font-size: 14px;
+                    font-weight: 500;
+                    color: #077bc4;
+                    margin-bottom: 10px;
+                }
+                h1{
+                    font-size: 20px;
+                    font-weight: 500;
+                    color: #242424;
+                    margin-bottom: 10px;
+                }
+            }
+            .faqs{
+                max-width: 60%;
+                width: 100%;
+                margin: 5px auto;
+                padding: 15px;
+                background-color: white;
+                overflow: hidden;
+                margin-top: 20px;
+            }
+        }
+    }
+}

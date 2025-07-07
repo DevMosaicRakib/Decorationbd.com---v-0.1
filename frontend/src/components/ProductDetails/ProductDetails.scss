@@ -1,0 +1,25 @@
+#imageZoom {
+    position: relative;
+    overflow: hidden; /* Ensures the zoom effect is clipped to the container */
+  }
+  
+#imageZoom::after {
+    display: var(--display);
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    background-image: var(--url);
+    background-size: 200%; /* Set initial zoom level */
+    background-position: var(--zoom-x) var(--zoom-y);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1; /* Ensures it appears above the image */
+    transition: background-size 0.3s ease, background-position 0.3s ease;
+  }
+
+.short-description {
+    white-space: pre-line;
+  }
+  

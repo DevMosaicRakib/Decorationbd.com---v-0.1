@@ -1,0 +1,47 @@
+// Define the keyframes for the rotating animation
+@keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .preloader-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    z-index: 50; // Ensure the preloader is above other content
+  }
+  
+  .preloader-wrapper {
+    position: relative;
+    width: 100px; // Adjust size as needed
+    height: 100px;
+  }
+  
+  .rotating-border {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 8px;
+    bottom: 0;
+    border: 4px solid transparent; // Create transparent borders
+    border-top-color: #17ad44; // Blue color for the top border
+    border-radius: 50%; // Make the border circular
+    animation: rotate 1s linear infinite; // Rotate the circle infinitely
+  }
+  
+  .preloader-logo {
+    position: relative;
+    width: 94px; // Logo size
+    height: 94px;
+    object-fit: contain; // Ensure the logo fits the container
+  }

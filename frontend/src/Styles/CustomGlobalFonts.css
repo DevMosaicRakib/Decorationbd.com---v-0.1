@@ -1,0 +1,33 @@
+@font-face {
+    font-family: 'ProximaNovaAltRegular';
+    src: url('../Assets/Fonts/Proxima Nova Alt Regular.otf') format('opentype');
+}
+
+.ProxymaRegular{
+    font-family: 'ProximaNovaAltRegular';
+}
+
+@font-face {
+    font-family: 'ProximaNovaAltSemiBold';
+    src: url('../Assets/Fonts/Proxima Nova Alt Semibold.otf') format('opentype');
+}
+
+.ProxymaSemiBold{
+    font-family: 'ProximaNovaAltSemiBold';
+}
+@font-face {
+    font-family: 'ProximaNovaAltBold';
+    src: url('../Assets/Fonts/Proxima Nova Alt Bold.otf') format('opentype');
+}
+
+.ProxymaBold{
+    font-family: 'ProximaNovaAltBold';
+}
+@font-face {
+    font-family: 'ProximaNovaAltExtrabold';
+    src: url('../Assets/Fonts/Proxima Nova Alt Extrabold.otf') format('opentype');
+}
+
+.ProxymaExtrabold{
+    font-family: 'ProximaNovaAltExtrabold';
+}

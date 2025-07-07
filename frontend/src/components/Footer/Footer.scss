@@ -1,0 +1,552 @@
+@import "../../css-config/mixins.scss";
+
+.footerSection{
+    width: 100%;
+    height: 100%;
+    background-color:#010001 ;
+    color: #fff;
+    margin-top: 0;
+    @include md{
+        width: 100%;
+        height: 100%;
+        background-color:#010001 ;
+        color: #fff;
+        margin-top: 40px;
+        padding: 20px 0 35px 0;
+    }
+    @include lg{
+        width: 100%;
+        height: 100%;
+        background-color:#010001 ;
+        color: #fff;
+        margin-top: 60px;
+        padding: 20px 0 50px 0;
+    }
+    @include xl{
+        width: 100%;
+        height: 100%;
+        background-color:#010001 ;
+        color: #fff;
+        margin-top: 50px;
+        padding: 10px 0 20px 0;
+    }
+    @include xxl{
+        width: 100%;
+        height: 350px;
+        background-color:#010001 ;
+        color: #fff;
+        margin-top: 80px;
+        padding: 0 0 80px 0;
+    }
+
+
+    .others{
+        .category{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin: 18px auto;
+            
+            @include sm{
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                margin: 5px auto;
+            }
+            @include md{
+                display: flex;
+                align-items: start;
+                flex-direction: column;
+                margin: 0 0 5px 0;
+            }
+            @include lg{
+                display: flex;
+                align-items: start;
+                flex-direction: column;
+                margin: 0 0 20px 0;
+            }
+            @include xl{
+                display: flex;
+                align-items: start;
+                flex-direction: column;
+                margin: 0 0 15px 0;
+            }
+            .title{
+                font-family: ProxymaSemiBold;
+                font-size: 15px;
+                text-transform: capitalize;
+                margin-bottom: 5px;
+                @include sm{
+                    font-family: ProxymaSemiBold;
+                    font-size: 15px;
+                    text-transform: capitalize;
+                    margin-bottom: 5px;
+                }
+                @include md{
+                    font-family: ProxymaSemiBold;
+                    font-size: 15px;
+                    text-transform: capitalize;
+                    margin-bottom: 10px;
+                    
+                }
+                @include lg{
+                    font-family: ProxymaSemiBold;
+                    font-size: 15px;
+                    text-transform: capitalize;
+                    margin-bottom: 10px;
+                    text-align: left;
+                }
+                @include xl{
+                    font-family: ProxymaSemiBold;
+                    font-size: 15px;
+                    text-transform: capitalize;
+                    margin-bottom: 10px;
+                    text-align: left;
+                }
+            }
+            .items{
+                text-transform: capitalize;
+                align-items: center;
+                text-align: center;
+                div{
+                    margin-bottom: 5px;
+                    color: #fff;
+                    cursor: pointer;
+                    font-size: 12px;
+                    font-family: ProxymaRegular;
+
+                }
+                @include sm{
+                    text-transform: capitalize;
+                    align-items: center;
+                    text-align: center;
+                    div{
+                        margin-bottom: 8px;
+                        color: #fff;
+                        cursor: pointer;
+                        font-size: 12px;
+                        font-family: ProxymaRegular;
+                    }
+                }
+                @include md{
+                    text-transform: capitalize;
+                    align-items: start;
+                    text-align: left;
+                    div{
+                        margin-bottom: 8px;
+                        color: #fff;
+                        cursor: pointer;
+                        font-size: 12px;
+                        font-family: ProxymaRegular;
+       
+                    }
+                }
+                @include lg{
+                    text-transform: capitalize;
+                    align-items: start;
+                    text-align: left;
+                    div{
+                        margin-bottom: 8px;
+                        color: #fff;
+                        cursor: pointer;
+                        font-size: 12px;
+                        font-family: ProxymaRegular;
+
+                    }
+                }
+
+                @include xl{
+                    text-transform: capitalize;
+                    align-items: start;
+                    text-align: left;
+                    div{
+                        margin-bottom: 8px;
+                        color: #fff;
+                        cursor: pointer;
+                        font-size: 12px;
+                        font-family: ProxymaRegular;
+                    
+                    }
+                }
+                @include xxl{
+                    text-transform: capitalize;
+                    align-items: start;
+                    text-align: left;
+                    div{
+                        margin-bottom: 8px;
+                        color: #fff;
+                        cursor: pointer;
+                        font-size: 12px;
+                        font-family: ProxymaRegular;
+                        &:hover{
+                            color: #007bc4;
+                        }
+                    }
+                }
+            }
+        }
+        .links{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 10px;
+            margin-right: 25px;
+            @include sm{
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                margin: 15px auto;
+            }
+            @include md{
+                display: flex;
+                align-items: start;
+                flex-direction: column;
+                margin-top: 0;
+                margin-right: 0;
+                margin-left: 0;
+                padding-left: 0;
+            }
+            @include lg{
+                display: flex;
+                align-items: start;
+                flex-direction: column;
+                margin-top: 0;
+                margin-right: 0;
+            }
+
+            @include xl{
+                display: flex;
+                align-items: start;
+                flex-direction: column;
+                margin-top: 0;
+                margin-right: 0;
+            }
+            .title{
+                font-family: ProxymaSemiBold;
+                font-size: 15px;
+                text-transform: capitalize;
+                margin-bottom: 5px;
+                margin-right: 14px;
+                @include sm{
+                    font-family: ProxymaSemiBold;
+                    font-size: 15px;
+                    text-transform: capitalize;
+                    margin-bottom: 5px;
+                    margin-right: 0;
+                }
+                @include md{
+                    font-family: ProxymaSemiBold;
+                    font-size: 15px;
+                    text-transform: capitalize;
+                    margin-bottom: 10px;
+                    margin-right: 40px;
+                }
+                @include lg{
+                    font-family: ProxymaSemiBold;
+                    font-size: 15px;
+                    text-transform: capitalize;
+                    margin-bottom: 10px;
+                    margin-right: 0;
+                    text-align: left;
+                }
+
+                @include xl{
+                    font-family: ProxymaSemiBold;
+                    font-size: 15px;
+                    text-transform: capitalize;
+                    margin-bottom: 10px;
+                    margin-right: 0;
+                    text-align: left;
+                }
+            }
+            .items{
+                text-transform: capitalize;
+                align-items: center;
+                text-align: start;
+                div{
+                    margin-bottom: 5px;
+                    color: #fff;
+                    cursor: pointer;
+                    font-size: 12px;
+                    font-family: ProxymaRegular;
+                }
+                @include sm{
+                    text-transform: capitalize;
+                    align-items: center;
+                    text-align: center;
+                    div{
+                        margin-bottom: 5px;
+                        color: #fff;
+                        cursor: pointer;
+                        font-size: 12px;
+                        font-family: ProxymaRegular;
+
+                    }
+                }
+                @include md{
+                    text-transform: capitalize;
+                    align-items: start;
+                    text-align: left;
+                    div{
+                        margin-bottom: 6px;
+                        color: #fff;
+                        cursor: pointer;
+                        font-size: 12px;
+                        font-family: ProxymaRegular;
+
+                    }
+                }
+                @include lg{
+                    text-transform: capitalize;
+                    align-items: start;
+                    text-align: left;
+                    div{
+                        margin-bottom: 10px;
+                        color: #fff;
+                        cursor: pointer;
+                        font-size: 12px;
+                        font-family: ProxymaRegular;
+
+                    }
+                }
+
+                @include xl{
+                    text-transform: capitalize;
+                    align-items: start;
+                    text-align: left;
+                    div{
+                        margin-bottom: 8px;
+                        color: #fff;
+                        cursor: pointer;
+                        font-size: 12px;
+                        font-family: ProxymaRegular;
+                        
+                    }
+                }
+                @include xxl{
+                    text-transform: capitalize;
+                    align-items: start;
+                    text-align: left;
+                    div{
+                        margin-bottom: 8px;
+                        color: #fff;
+                        cursor: pointer;
+                        font-size: 12px;
+                        font-family: ProxymaRegular;
+                        &:hover{
+                            color: #007bc4;
+                        }
+                    }
+                }
+            }
+        }
+        .contact{
+            align-items: center;
+            margin-top: 10px;
+            margin-left: 0;
+            // margin-right: 2px;
+            @include sm{
+                align-items: center;
+                margin-top: 20px;
+                // margin-left: 120px;
+            //    text-align: center;
+            }
+            @include md{
+                align-items: start;
+                justify-content: start;
+                margin-top: 0;
+                margin-left: 0;
+                margin-right: 0;
+                margin-bottom: 40px;
+            }
+            @include lg{
+                align-items: start;
+                justify-content: start;
+                margin-top: 0;
+                margin-left: 0;
+                margin-right: 0;
+                margin-bottom: 55px;
+            }
+
+            @include xl{
+                align-items: start;
+                justify-content: start;
+                margin-top: 0;
+                margin-left: 0;
+                margin-right: 0;
+                margin-bottom: 50px;
+            }
+            @include xxl{
+                align-items: start;
+                justify-content: start;
+                margin-top: 0;
+                margin-left: 0;
+                margin-right: 0;
+                margin-bottom: 40px;
+            }
+            .title{
+                font-family: ProxymaSemiBold;
+                font-size: 15px;
+                text-transform: capitalize;
+                margin-bottom: 5px;
+                @include sm{
+                    font-family: ProxymaSemiBold;
+                    font-size: 15px;
+                    text-transform: capitalize;
+                    margin-bottom: 5px;
+                    text-align: center;
+                }
+                @include md{
+                    font-family: ProxymaSemiBold;
+                    font-size: 15px;
+                    text-transform: capitalize;
+                    margin-bottom: 10px;
+                    margin-right: 0;
+                    text-align: left;
+                }
+                @include lg{
+                    font-family: ProxymaSemiBold;
+                    font-size: 15px;
+                    text-transform: capitalize;
+                    margin-bottom: 10px;
+                    margin-right: 0;
+                    text-align: left;
+                }
+
+                @include xl{
+                    font-family: ProxymaSemiBold;
+                    font-size: 15px;
+                    text-transform: capitalize;
+                    margin-bottom: 10px;
+                    margin-right: 0;
+                    text-align: left;
+                }
+            }
+            .item{
+                display: flex;
+                align-items: center;
+                margin-bottom: 5px;
+                color: #fff;
+
+                svg{
+                    flex-shrink: 0;
+                    font-size: 12px;
+                    margin-right: 3px;
+                }
+                span{
+                    display: block;
+                    cursor: pointer;
+                    font-size: 12px;
+                    font-family: ProxymaRegular;
+                }
+                @include sm{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-bottom: 8px;
+                    color: #fff;
+
+                    svg{
+                        flex-shrink: 0;
+                        font-size: 12px;
+                        margin-right: 3px;
+                    }
+                    span{
+                        display: block;
+                        cursor: pointer;
+                        font-size: 12px;
+                        font-family: ProxymaRegular;
+                    }
+                }
+                @include md{
+                    display: flex;
+                    align-items: center;
+                    justify-content: start;
+                    margin-left: 0;
+                    margin-bottom: 8px;
+                    color: #fff;
+
+                    svg{
+                        flex-shrink: 0;
+                        font-size: 12px;
+                        margin-right: 6px;
+                        // margin-top: 2px;
+                    }
+                    span{
+                        display: block;
+                        // margin-bottom: 10px;
+                        cursor: pointer;
+                        font-size: 12px;
+                        font-family: ProxymaRegular;
+                    }
+                }
+                @include lg{
+                    display: flex;
+                    align-items: center;
+                    justify-content: start;
+                    margin-left: 0;
+                    margin-bottom: 8px;
+                    color: #fff;
+
+                    svg{
+                        flex-shrink: 0;
+                        font-size: 12px;
+                        margin-right: 10px;
+                        // margin-top: 2px;
+                    }
+                    span{
+                        display: block;
+                        // margin-bottom: 10px;
+                        cursor: pointer;
+                        font-size: 12px;
+                        font-family: ProxymaRegular;
+                    }
+                }
+
+                @include xl{
+                    display: flex;
+                    align-items: center;
+                    justify-content: start;
+                    margin-left: 0;
+                    margin-bottom: 8px;
+                    color: #fff;
+                    svg{
+                        flex-shrink: 0;
+                        font-size: 12px;
+                        margin-right: 10px;
+                        // margin-top: 2px;
+                    }
+                    span{
+                        display: block;
+                        // margin-bottom: 10px;
+                        cursor: pointer;
+                        font-size: 12px;
+                        font-family: ProxymaRegular;
+                    }
+                }
+                @include xxl{
+                    display: flex;
+                    align-items: center;
+                    justify-content: start;
+                    margin-left: 0;
+                    margin-bottom: 8px;
+                    color: #fff;
+                    svg{
+                        flex-shrink: 0;
+                        font-size: 12px;
+                        margin-right: 10px;
+                        // margin-top: 2px;
+                    }
+                    span{
+                        display: block;
+                        // margin-bottom: 10px;
+                        cursor: pointer;
+                        font-size: 12px;
+                        font-family: ProxymaRegular;
+                    }
+                }
+            }
+        }
+    }
+
+}

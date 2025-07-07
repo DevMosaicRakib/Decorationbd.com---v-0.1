@@ -1,0 +1,209 @@
+@import "../../css-config/mixins.scss";
+.ShopSection{
+    display: flex;
+    // align-items: center;
+    justify-content: space-between;
+    .StickCatAndOtherFilltering{
+        margin-top: 100px;
+        margin-left: 0;
+        margin-right: 10px;
+        width: 100%;
+        max-width: 18%;
+        
+        .shopheading{
+            width: 270px;
+            text-transform: uppercase;
+            font-weight: 400;
+            font-size: 16px;
+            background-color: #f9f9f9;
+            border: 1px solid rgba(0,0,0,0.1);
+            padding: 10px;
+            text-align: center;
+            color: #242424;
+        }
+        @include xl{
+            margin-top: 30px;
+            margin-left: 0;
+            width: 100%;
+            max-width: 16%;
+            
+            .shopheading{
+                width: 173px;
+                text-transform: uppercase;
+                font-weight: 500;
+                font-size: 18px;
+                background-color: #f9f9f9;
+                border: 1px solid rgba(0,0,0,0.1);
+                padding: 10px 0;
+                text-align: center;
+                color: #242424;
+            }
+        }
+        @include xxl{
+            margin-top: 15px;
+            margin-left: 0;
+            width: 100%;
+            max-width: 18%;
+            
+            .shopheading{
+                width: 205px;
+                text-transform: uppercase;
+                font-weight: 500;
+                font-size: 16px;
+                background-color: #f9f9f9;
+                border: 1px solid rgba(0,0,0,0.1);
+                padding: 10px 0;
+                text-align: center;
+                color: #242424;
+            }
+        }
+    }
+    .productLayout{
+        width: 100%;
+        max-width: 97%;
+        height: 100%;
+        margin: 80px auto 0 auto;
+        @include sm{
+            width: 100%;
+            max-width: 99%;
+            height: 100%;
+            margin: 80px auto 0 auto;
+        }
+        @include md{
+            width: 100%;
+            max-width: 98%;
+            height: 100%;
+            margin: 80px auto 0 auto;
+        }
+        @include xl{
+            width: 100%;
+            max-width: 83%;
+            height: 100%;
+            margin-top: 30px;
+        }
+        @include xxl{
+            width: 100%;
+            max-width: 80.4%;
+            height: 100%;
+            margin-top: 10px;
+        }
+        .textAndProductGridLayoutIcons{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            @include xl{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 10px;
+            }
+            .txt{
+                font-weight: 500;
+                font-size: 13px;
+                color: #242424;
+                text-transform: capitalize;
+                cursor: pointer;
+                span{
+                    &:hover{
+                        color: #23bb73;
+                    }
+                }
+                @include xxl{
+                    font-weight: 500;
+                    font-size: 13px;
+                    color: #242424;
+                    text-transform: capitalize;
+                    cursor: pointer;
+                    span{
+                        &:hover{
+                            color: #23bb73;
+                        }
+                    }
+                }
+            }
+            .gridIcons{
+                display: none;
+                @include xl{
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    svg{
+                        font-weight: 400;
+                        font-size: 20px;
+                        color: #242424;
+                        cursor: pointer;
+                    }
+                }
+                @include xxl{
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    svg{
+                        font-weight: 400;
+                        font-size: 16px;
+                        color: #242424;
+                        cursor: pointer;
+                    }
+                }
+            }
+            .itemOfProduct{
+                margin-right: 0;
+                .text{
+                    text-transform: capitalize;
+                    font-weight: 400;
+                    font-size: 13px;
+                }
+                span{
+                    margin: 0 5px;
+                    cursor: pointer;
+                    font-size: 13px;
+                    font-weight: 400;
+                    color: #242424;
+                    &:hover{
+                        color: gray;
+                    }
+                }
+                @include xl{
+                    margin-right: 10px;
+                    .text{
+                        text-transform: capitalize;
+                        font-weight: 400;
+                        font-size: 13px;
+                    }
+                    span{
+                        margin: 0 5px;
+                        cursor: pointer;
+                        font-size: 13px;
+                        font-weight: 400;
+                        color: #242424;
+                        &:hover{
+                            color: gray;
+                        }
+                    }
+                }
+                @include xxl{
+                    margin-right: 10px;
+                    .text{
+                        text-transform: capitalize;
+                        font-weight: 400;
+                        font-size: 13px;
+                    }
+                    span{
+                        margin: 0 5px;
+                        cursor: pointer;
+                        font-size: 13px;
+                        font-weight: 400;
+                        color: #242424;
+                        &:hover{
+                            color: gray;
+                        }
+                    }
+                }
+            }
+        }
+        .productsPart{
+            background-color: #eaeaea;
+        }
+    }
+}

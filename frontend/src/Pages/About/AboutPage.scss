@@ -1,0 +1,29 @@
+@import "../../css-config/mixins.scss";
+.underline-heading {
+    position: relative; /* Position relative to use absolute positioning in the pseudo-element */
+    font-weight: 400;
+    &::after {
+      content: ''; /* Empty content */
+      display: block; /* Make the pseudo-element a block to allow for width and height */
+      width: 10%; /* Width of the underline */
+      height: 2px; /* Height of the underline */
+      background-color: #007bc4; /* Color of the underline */
+      margin: 0 auto; /* Center the underline */
+      margin-top: 1px; /* Space between the text and the underline */
+      margin-bottom: 5px;
+    }
+    @include md{
+      position: relative; /* Position relative to use absolute positioning in the pseudo-element */
+      font-weight: 400;
+      &::after {
+        content: ''; /* Empty content */
+        display: block; /* Make the pseudo-element a block to allow for width and height */
+        width: 4%; /* Width of the underline */
+        height: 2px; /* Height of the underline */
+        background-color: #007bc4; /* Color of the underline */
+        margin: 0 auto; /* Center the underline */
+        margin-top: 3px; /* Space between the text and the underline */
+      }
+    }
+  }
+  

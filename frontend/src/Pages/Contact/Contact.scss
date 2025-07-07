@@ -1,0 +1,139 @@
+@import "../../css-config/mixins.scss";
+.contactpage{
+    background-color: transparent;
+    color: #242424;
+    padding: 5px;
+    display: flex;
+    justify-content: start;
+
+    .wrappercontactpage{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        input{
+            padding: 3px;
+            border: none;
+            border-radius: 2px 0 0 2px;
+            font-size: 6px;
+            margin-bottom: 8px;
+        }
+
+        button{
+            padding: 3px;
+            color: white;
+            background: #23bb73;
+            border-radius: 0 2px 2px 0;
+            border: none;
+            outline: none;
+            font-size: 6px;
+            margin-bottom: 8px;
+        }
+        .iconscontactpage{
+            display: flex;
+            gap: 4px;
+        }
+        span{
+            font-size: 10px;
+            font-weight: 400;
+        }
+    }
+    @include md{
+        .wrappercontactpage{
+            width: 80%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+    
+            input{
+                padding: 5px;
+                border: none;
+                border-radius: 5px 0 0 5px;
+                font-size: 11px;
+                margin-bottom: 0;
+            }
+    
+            button{
+                padding: 5px;
+                color: white;
+                background: #23bb73;
+                border-radius: 0 5px 5px 0;
+                border: none;
+                outline: none;
+                font-size: 11px;
+                margin-bottom: 0;
+            }
+            .iconscontactpage{
+                display: flex;
+                gap: 10px;
+            }
+            span{
+                font-size: 13px;
+                font-weight: 400;
+            }
+        }
+    }
+    @include lg{
+        .wrappercontactpage{
+            width: 60%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+    
+            input{
+                padding: 5px;
+                border: none;
+                border-radius: 5px 0 0 5px;
+                font-size: 11px;
+            }
+    
+            button{
+                padding: 5px;
+                color: white;
+                background: #23bb73;
+                border-radius: 0 5px 5px 0;
+                border: none;
+                outline: none;
+                font-size: 11px;
+                // margin-top: 3px;
+            }
+            .iconscontactpage{
+                display: flex;
+                gap: 10px;
+            }
+            span{
+                font-size: 13px;
+                font-weight: 400;
+            }
+        }
+    }
+}
+.heading{
+    position: relative;
+
+    &::after {
+        content: ''; /* Empty content */
+        display: block; /* Make the pseudo-element a block to allow for width and height */
+        width: 10%; /* Width of the underline */
+        height: 2px; /* Height of the underline */
+        background-color: #007bc4; /* Color of the underline */
+        margin: 0 auto;
+        margin-top: 0;
+        margin-bottom: 20px;
+      }
+    @include md{
+        position: relative;
+
+        &::after {
+            content: ''; /* Empty content */
+            display: block; /* Make the pseudo-element a block to allow for width and height */
+            width: 5%; /* Width of the underline */
+            height: 2px; /* Height of the underline */
+            background-color: #007bc4; /* Color of the underline */
+            margin: 0 auto;
+            margin-top: 0;
+            margin-bottom: 30px;
+          }
+    }  
+}
