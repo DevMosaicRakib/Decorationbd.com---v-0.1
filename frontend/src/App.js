@@ -34,6 +34,8 @@ import useFetch from '../src/customHooks/useFetch'
 import SetLogin from "./Pages/SetLoginPage/SetLogin.jsx";
 import Blog from "./Pages/Blog/Blog.jsx";
 import CheckoutPopup from "./components/CheckoutPopup/CheckoutPopup.jsx";
+import MessengerChat from "./components/MessengerChat.jsx";
+import WhatsAppChat from "./components/WhatsAppChat.jsx";
 
 
 const App = () => {
@@ -177,6 +179,10 @@ const App = () => {
               sameDay={sameDay}
               />
             )}
+      {/* <CheckoutPopup isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen} sameDay={sameDay} /> */}
+      {/* Messenger Chat Plugin */}
+        <MessengerChat />
+        <WhatsAppChat />    
       </div>
   );
 };

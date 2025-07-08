@@ -4,12 +4,7 @@ __pycache__/
 *$py.class
 migrations
 backend/migrations
-homebanner
-products
-profile_pictures
-sliderImg
-/homebanner
-/home/rakib/Desktop/Dbd-v-0.0.1/.gitignore
+
 # C extensions
 *.so
 
@@ -144,6 +139,7 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+
 
 # Spyder project settings
 .spyderproject
