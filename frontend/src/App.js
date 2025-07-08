@@ -34,9 +34,9 @@ import useFetch from '../src/customHooks/useFetch'
 import SetLogin from "./Pages/SetLoginPage/SetLogin.jsx";
 import Blog from "./Pages/Blog/Blog.jsx";
 import CheckoutPopup from "./components/CheckoutPopup/CheckoutPopup.jsx";
-import MessengerChat from "./components/MessengerChat.jsx";
-import WhatsAppChat from "./components/WhatsAppChat.jsx";
-
+import { FloatingWhatsApp } from 'react-floating-whatsapp'
+import wplogo from './Assets/img/Logo.png'
+import MessengerCustomerChat from 'react-messenger-customer-chat';
 
 const App = () => {
   const { access_token } = useSelector(state => state.auth)
@@ -181,8 +181,22 @@ const App = () => {
             )}
       {/* <CheckoutPopup isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen} sameDay={sameDay} /> */}
       {/* Messenger Chat Plugin */}
-        <MessengerChat />
-        <WhatsAppChat />    
+      <MessengerCustomerChat
+        pageId="463824586815253"
+        appId="<APP_ID>"
+      />,
+        {/* WhatsAppChat Chat Plugin */}
+        <FloatingWhatsApp 
+          phoneNumber="+8801717381296"
+          accountName="Decorationbd.com"
+          avatar={wplogo}
+          // statusMessage="Available 24/7"
+          chatMessage="Hello, how can we help you?"
+          notification
+          notificationSound
+          allowClickAway
+          style={{ bottom: '80px', right: '20px' }}
+        />
       </div>
   );
 };
