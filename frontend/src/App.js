@@ -195,7 +195,7 @@ const App = () => {
           notification
           notificationSound
           allowClickAway
-          style={{ bottom: '80px', right: '20px' }}
+          style={{ position:'absolute',bottom: '80px', right: '20px' }}
         />
       </div>
   );
