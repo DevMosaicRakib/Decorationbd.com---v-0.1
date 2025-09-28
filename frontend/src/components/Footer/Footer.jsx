@@ -38,10 +38,10 @@ const Footer = () => {
         <div className="category ">
           <div className="title">popular categories</div>
           <div className="items">
-            <div><Link to='/'>Grocery</Link></div>
-            <div><Link to='/'>Fish & Meet</Link></div>
-            <div><Link to='/'>Cloud Kitchen</Link></div>
-            <div><Link to='/'>Dry Food</Link></div>
+            <div><Link to='/'>Monitor Arms</Link></div>
+            <div><Link to='/'>Home & Decor</Link></div>
+            <div><Link to='/'>Furniture</Link></div>
+            <div><Link to='/'>Kitchenware</Link></div>
           </div>
         </div>
 
